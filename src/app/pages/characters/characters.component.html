@@ -1,0 +1,16 @@
+<div class="characters">
+	<div *ngFor="let character of characters" class="character">
+		<div class="image" [style.background-image]='"url("+character.imageUrl+")"'>
+		</div>
+		<div class="content">
+			<div class="title">
+				<h3>{{character.name}}</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="pagination">
+  <a *ngIf="currentPage > 1" [routerLink]="['/characters/'+ prevPage]">&laquo;</a>
+  <a *ngFor='let in of counter(pages) ;let i = index' [className]="i+1 == currentPage ? 'active':''" [routerLink]="['/characters/'+ (i+1)]">{{i+1}}</a>
+  <a *ngIf="currentPage < pages" [routerLink]="['/characters/'+ nextPage]">&raquo;</a>
+</div>

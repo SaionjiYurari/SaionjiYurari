@@ -1,0 +1,16 @@
+ <div class="navbar">
+      <a routerLink="/about" (click)="openDropdown = false">About</a>
+  <div class="dropdown" >
+    <button class="dropbtn" (click)="openDropdown = true" appClickOutside (clickOutside)="closeDropdown()">Interests
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div *ngIf="openDropdown" class="dropdown-content">
+      <a routerLink="/interest/0">Anime</a>
+      <a routerLink="/interest/1">Manga</a>
+      <a routerLink="/interest/2">Games</a>
+      <a routerLink="/interest/3">Other Interests</a>
+    </div>
+  </div>
+  <a routerLink="/characters/1">Favourite Characters</a>
+  <a routerLink="/links">Links</a>
+</div>

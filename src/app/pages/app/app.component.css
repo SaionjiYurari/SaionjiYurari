@@ -1,0 +1,62 @@
+/* AppComponent's private CSS styles */
+h1 {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#content
+{
+  overflow: auto;
+  background-color: #3b3c86;
+  border-bottom: 10px solid #3b3c86;
+  border-top: 10px solid #3b3c86;
+  height: 100%;
+}
+
+#app {
+  margin-top: 46px;
+  background-color: #9f1246;
+  height: calc(100% - 46px);
+  border: 0;
+  padding: 0px;
+  width: 100%;
+}
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #app {
+    max-height: 85vh;
+    max-width: 90vw;
+    border: 10px solid rgb(255, 166, 0);
+    padding: 6px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1200px) {
+  #app {
+    max-height: 85vh;
+    max-width: 80vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 1900px and up) */
+@media only screen and (min-width: 1900px) {
+  #app {
+    max-height: 85vh;
+    max-width: 2000px;
+  }
+}

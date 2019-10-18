@@ -1,0 +1,85 @@
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.characters {
+  flex-basis: 100%;
+  min-width: 20%;
+}
+
+.character {
+  width: 225px;
+}
+.character {
+  margin: 5px;
+  background-color: #9f1246;
+  border-radius: 5px;
+}
+.character:hover {
+  opacity: 0.9;
+}
+
+.image {
+  height: 240px;
+  width: 225px;  
+  background-color:rgb(255, 255, 255);
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: top; 
+  float: left;
+  border-bottom: 2px solid rgb(245, 181, 61);
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  color: rgb(241, 225, 193);
+  float: left;
+}
+
+.content h3 {
+  color: rgb(245, 181, 61);
+  padding: 4px 5px;
+  margin: 5px 2px 5px 5px; 
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.pagination a {
+  color: rgb(236, 191, 106);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid rgb(236, 191, 106);
+  background-color: #9f1246;
+}
+
+.pagination a.active {
+  background-color: rgb(236, 191, 106);
+  color: #9f1246;
+  border: 1px solid rgb(236, 191, 106);
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #75042e;
+  color: rgb(255, 166, 0);
+  }
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
