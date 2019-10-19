@@ -19,4 +19,8 @@ export class LinksComponent implements OnInit {
   getLinks(): void {
     this.personService.getLinks().subscribe(links => this.websites = links);
   }
+
+  navigate(url: string): void {
+    window.location.href = url;
+  }
 }
