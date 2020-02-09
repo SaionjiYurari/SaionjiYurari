@@ -12,6 +12,7 @@ h2, h3 {
 body {
   margin: 0px;
   padding: 0px;
+  background-color: rgb(177, 130, 170);
 }
 body, input[type="text"], button {
   color: #333;
@@ -23,12 +24,14 @@ body, input[type="text"], button {
   box-sizing: border-box;
 }
 
+.touch .content {
+  opacity: 1 !important;
+}
 
 html, body {
     margin: 0;
     height: 100%;
 }
-
 
 
 /* Extra small devices (phones, 600px and down) */

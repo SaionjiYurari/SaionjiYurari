@@ -2,33 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow-y: auto;
+  height: 100%;
 }
 
 .interest {
-  flex-basis: 100%;
-  min-width: 20%;
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .interest {
-    max-width: 49%;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 1200px) {
-
-  .interest {
-    max-width: 32%;
-  }
-}
-
-/* Large devices (laptops/desktops, 1900px and up) */
-@media only screen and (min-width: 1900px) {
-
-  .interest {
-    max-width: 20%;
-  }
+  padding: 2px;
 }

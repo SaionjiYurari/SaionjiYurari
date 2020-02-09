@@ -1,18 +1,41 @@
 <html>
   <head>
-<base href="/saionjiyurari/">    <title>Angular App</title>
-  <link rel="stylesheet" href="styles.5d9329ba643bbe968498.css">
-  <meta name="twitter:card" content="summary"></meta>
-  <meta name="twitter:site" content="@SaionjiYurari"></meta>\
-<meta property="og:title" content="Nat's About Me Page" />
-<meta property="og:description" content="Get to know me??" />
-<meta property="og:image" content="https://pbs.twimg.com/profile_images/1180350327825915911/hnMqMTt-_400x400.jpg" />
-  </head>
-  <body>
-  <head>
-</head>
+    <base href="/saionjiyurari/">    <title>Angular App</title>
+    <meta name="twitter:card" content="summary"></meta>
+    <meta name="twitter:site" content="@SaionjiYurari"></meta>
+    <meta property="og:title" content="Nat's About Me Page" />
+    <meta property="og:description" content="Get to know me??" />
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1180350327825915911/hnMqMTt-_400x400.jpg" />
+    <script type="text/javascript">
+      function is_touch_device4() {
+    
+        var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
+        
+        var mq = function (query) {
+            return window.matchMedia(query).matches;
+        }
+    
+        if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+            return true;
+        }
+    
+        // include the 'heartz' as a way to have a non matching MQ to help terminate the join
+        // https://git.io/vznFH
+        var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+        return mq(query);
+    }
+    if (is_touch_device4())
+    {
+      document.documentElement.className += " touch";
+    }
+    else 
+    {
+      document.documentElement.className += " no-touch";
+    }
+    </script>
+  <link rel="stylesheet" href="styles.ace9aecd7036d9b7ddb7.css"></head>
 <body>
 <my-app>loading</my-app>
 </body>
-  <script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.5850ce021546fcdb8cb0.js"></script><script type="text/javascript" src="main.2459f5d49538e432948e.js"></script></body>
+  <script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.5850ce021546fcdb8cb0.js"></script><script type="text/javascript" src="main.0118e617ba1b7d5ba5f0.js"></script></body>
 </html>

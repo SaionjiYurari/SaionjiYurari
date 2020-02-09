@@ -1,6 +1,7 @@
 .link a {
   color: goldenrod;
   text-decoration: none;
+  font-size: 25px;
 }
 
 :host {
@@ -16,24 +17,24 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 5px;
-  border-bottom: 4px solid rgb(255, 166, 0);
+  flex-grow: 10px;
 }
 
 .link {
-  width: 300px;
+  min-width: 400px;
+  flex-grow: 10px;
   margin: 10px 10px;
-  background-color: #9f1246;
-  padding: 5px 10px;
-  border-radius: 4px;
+  background-color: #5d2a7571;
+  padding: 10px 10px;
+  border-radius: 5px;
   text-align: center;
   font-size: 16pt;
 }
 
 .link:hover, .dropdown:hover .dropbtn {
   cursor: pointer;
-  background-color: #75042e;
-  color: rgb(255, 166, 0);
+  background-color: #5d2a75be;
+  color: goldenrod;
 }
 
 span {
@@ -41,13 +42,4 @@ span {
   background-color: rgb(89, 0, 100);
   height: 100%;
 
-}
-
-h1 {
-  font-size: 32pt;
-  text-align: center;
-  padding: 5px 2px;
-  border-bottom: 4px solid rgb(255, 166, 0);
-  color: rgb(255, 166, 0);
-  margin: 15px 2px 15px 2px;
 }
